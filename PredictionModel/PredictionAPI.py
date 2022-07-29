@@ -28,7 +28,6 @@ def login():
         resp.headers['Content-Type'] = "text/html"
         resp.headers['Access-Control-Allow-Origin'] = "*"
         return resp
-        return render_template('login.html', message='')
 
 if __name__ == "__main__":
     app.run(debug = True)
